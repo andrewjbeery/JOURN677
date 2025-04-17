@@ -1,0 +1,68 @@
+---
+title: "demo"
+output: html_document
+date: "2025-01-23"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Defining Variables in R
+
+= or <-
+
+```{r}
+a = 1
+a
+b = 2
+b
+c = a+b
+c
+```
+
+for lists:
+
+```{r}
+list = c(1,2,3,4)
+list
+list[3]
+```
+
+mean
+```{r}
+mean(list)
+```
+
+summary
+
+```{r}
+summary(list)
+```
+
+boolean
+```{r}
+#this is a comment
+3!=2
+```
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+- LIS 464
+- LIS 646
+- J677
+- African 210
+
+`print("hello")`
+
+1. item1
