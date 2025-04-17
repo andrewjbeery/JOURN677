@@ -1,0 +1,71 @@
+---
+title: "lecture 2"
+author: "AJ Beery"
+date: "2025-01-30"
+output: html_document
+---
+
+# Heading
+text text text
+
+## Heading 2
+text text text
+
+1. list one
+2. list two
+
+### sub-sub heading
+text text text
+
+- list
+- list
+
+## subheading second
+[line explaining]
+```{r}
+sjmc = c("Thamyres", "AJ", "Hailey")
+library(socviz)
+titanic
+titanic$fateb
+```
+
+```{r}
+library(tidyverse)
+
+ggplot(mpg, mapping = aes(displ, hwy)) + geom_point() + geom_smooth()
+
+
+ggplot(mpg, mapping = aes(hwy, hwy)) + geom_point() + theme_test()
+
+ggplot(mpg, mapping = aes(displ, model)) + geom_point() + theme_minimal()
+
+ggplot(mpg, mapping = aes(year, hwy)) + geom_point() + theme_dark()
+
+ggplot(mpg, mapping = aes(cyl, hwy)) + geom_point(color = "red", alpha = .5, shape = 5, size = .5) + theme_test()
+
+ggplot(mpg, mapping = aes(displ, hwy)) + geom_point(color = "blue", alpha = 1, shape = 5, size = .5) + theme_minimal()
+
+ggplot(mpg, mapping = aes(displ, cty)) + geom_point(color = "red", alpha = 1, shape = 5, size = 1) + geom_smooth() + theme_minimal()
+
+ggplot(mpg, mapping = aes(displ, hwy)) + geom_point(mapping = aes(color = drv), shape = 1, size = 1) + geom_smooth( ) + theme_minimal()
+
+ggplot(mpg, mapping = aes(displ, hwy)) + geom_point(mapping = aes(color = drv)) + facet_wrap(~drv)
+```
+
+
+
+
+
+
+# USArrests
+
+```{r}
+ggplot(USArrests, mapping = aes(UrbanPop, Assault)) + geom_point() + geom_smooth()
+
+ggplot(freeny, mapping = aes(freeny.y, price.index)) + geom_point()
+
+ggplot(ToothGrowth, mapping = aes(dose, len)) + geom_point(mapping = aes(color = supp)) + facet_grid(~supp) + geom_smooth()
+
+ggplot(Puromycin, mapping = aes(conc, rate)) + geom_point(mapping = aes(color = state)) +geom_smooth(mapping = aes(color = state), alpha = .25)
+```
+
